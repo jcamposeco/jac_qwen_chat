@@ -22,3 +22,9 @@ Do not sign in, create an API key, or use an API key on the person's behalf. If 
 
 Local models run on the person's computer. Cloud models run on Ollama's servers; the CLI uses names ending in `:cloud`. Consult the cloud documentation for the current model names and API details.
 
+
+## Example local agent
+
+The [local agent instructions](examples/local-agent/AGENTS.md) define a simple project helper. To try them, download or clone this repository to your computer, open PowerShell in the `examples/local-agent` folder, and run `ollama launch codex`. Select a local model such as `qwen3.5:9b` if available. Codex CLI must be installed; see [Ollama's Codex guide](https://docs.ollama.com/integrations/codex).
+
+Try asking: “Read AGENTS.md, create a short hello.md introducing this project, and explain what you did.” The model runs locally when the local Ollama model is selected. GitHub stores the instructions; running an agent still requires a local copy of the folder.
